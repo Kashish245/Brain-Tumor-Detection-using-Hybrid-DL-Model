@@ -174,4 +174,23 @@ cython_debug/
 .pypirc
 
 
-.venv
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment
+.venv/
+
+# DVC-tracked data
+data/raw/
+
+# DVC cache (optional if you want to push to remote only)
+.dvc/cache/
+
+# Logs, models, outputs
+logs/
+checkpoints/
+artifacts/
+outputs/
+
+

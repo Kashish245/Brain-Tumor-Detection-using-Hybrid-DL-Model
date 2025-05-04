@@ -1,0 +1,27 @@
+# config.yaml
+
+
+data:
+  raw_data_dir: data/raw
+  train_dir: data/raw/Training
+  test_dir: data/raw/Testing
+
+model:
+  base_model: VGG16
+  use_pretrained: true
+  include_top: false
+  input_shape: [224, 224, 3]
+
+training:
+  batch_size: 32
+  epochs: 10
+  learning_rate: 0.0001
+
+artifacts:
+  model_dir: artifacts/model
+  saved_model_name: brain_tumor_classifier.h5
+  svm_model_name: svm_model.pkl
+  history_plot: artifacts/history/accuracy.png
+
+logs:
+  log_dir: logs
