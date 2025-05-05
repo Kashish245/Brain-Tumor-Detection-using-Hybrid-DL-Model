@@ -195,3 +195,19 @@ outputs/
 
 
 data/processed/
+
+# Virtual environment
+tumor_detection/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+
+# Model files
+*.h5
+*.pkl
+*.joblib
+*.npy

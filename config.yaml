@@ -10,6 +10,8 @@ base:
   num_classes: 4
   model_name: EfficientNetB0
   use_data_augmentation: true
+  class_names: ["glioma_tumor", "meningioma_tumor", "no_tumor", "pituitary_tumor"]
+
 
 paths:
   train_dir: data/raw/Training
@@ -22,8 +24,14 @@ paths:
   model_dir: artifacts/models/
   xgboost_model: artifacts/models/xgboost_model.pkl
   history_path: artifacts/history/train_history.json
+  report_dir: artifacts/reports
   logs: logs/
   mlruns_dir: mlruns/
+  cnn_features_path: data/processed/cnn_features.npy
+  efficientnet_model_path: artifacts/models/efficientnet_model.h5
+
+
+
 
 model:
   base_model: EfficientNetB0

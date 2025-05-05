@@ -1,7 +1,10 @@
 import os
 import pickle
 import matplotlib.pyplot as plt
+import yaml
 from tensorflow.keras.models import save_model
+from src.exception import CustomException
+
 
 def save_keras_model(model, path):
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -23,3 +26,12 @@ def plot_training_history(history, path):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     plt.savefig(path)
     plt.close()
+
+def read_yaml(path_to_yaml: str) -> dict:
+    """Reads a YAML file and returns its contents as a dictionary."""
+    try:
+        with open(path_to_yaml, 'r') as file:
+            content = yaml.safe_load(file)
+            return content
+    except Exception as e:
+        raise CustomException(f"Error reading YAML file {path_to_yaml}: {str(e)}") from e
