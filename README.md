@@ -1,4 +1,4 @@
-# 🧠 Brain-Tumor-Detection-using-Hybrid-DL-Model
+#  Brain-Tumor-Detection-using-Hybrid-DL-Model
 
 A production-ready **Brain Tumor Detection System** that leverages **EfficientNetB0** for deep feature extraction and **XGBoost** for classification. Built using a full **MLOps pipeline**, this project includes modular code, version control (Git + DVC), experiment tracking (MLflow), and a deployable **Streamlit web application**.
 
@@ -10,16 +10,16 @@ This system detects and classifies brain tumors from MRI images into multiple ca
 
 ---
 
-## ✅ Features
+##  Features
 
-- 📦 **Pretrained EfficientNetB0** as a feature extractor
-- 🌲 **XGBoost** classifier for robust prediction
-- ⚙️ **Modular architecture**: data loading, preprocessing, feature extraction, training, prediction
-- 🧪 **Streamlit App** to run predictions on single images
-- 🧾 **MLflow** for experiment tracking and reproducibility
-- 💾 **DVC** for dataset versioning and model tracking
-- 📄 Detailed logging and custom exception handling
-- 🔍 Displays both **raw** and **preprocessed** image in UI
+-  **Pretrained EfficientNetB0** as a feature extractor
+-  **XGBoost** classifier for robust prediction
+-  **Modular architecture**: data loading, preprocessing, feature extraction, training, prediction
+-  **Streamlit App** to run predictions on single images
+-  **MLflow** for experiment tracking and reproducibility
+-  **DVC** for dataset versioning and model tracking
+-  Detailed logging and custom exception handling
+-  Displays both **raw** and **preprocessed** image in UI
 
 ---
 
@@ -36,7 +36,7 @@ This system detects and classifies brain tumors from MRI images into multiple ca
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ├── src/
 │ ├── config_reader.py
@@ -44,7 +44,7 @@ This system detects and classifies brain tumors from MRI images into multiple ca
 │ ├── preprocessing.py
 │ ├── feature_extraction.py
 │ ├── XG_Boost_classifier.py   (model.py)
-│ ├── train.py
+│ ├── main.py
 │ ├── predict_img.py
 │ ├── logger.py
 │ └── exception.py
@@ -60,6 +60,7 @@ This system detects and classifies brain tumors from MRI images into multiple ca
 └── README.md
 
 
+---
 
 Usage
 --> Open http://localhost:5000
@@ -74,6 +75,7 @@ Usage
 
         - Predicted tumor type
 
+---
 
 CLI Prediction
 For single image inference:
