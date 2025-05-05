@@ -77,6 +77,6 @@ Usage
 
 ---
 
-CLI Prediction
+CLI Prediction :- 
 For single image inference:
 python src/predict_img.py --image_path path/to/image.jpg
